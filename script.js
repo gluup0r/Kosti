@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const result = document.getElementById("result");
   const error = document.getElementById("error");
 
-  // 1. === ДОДАНО: Знаходимо аудіо-плеєр ===
   const backgroundMusic = document.getElementById("backgroundMusic");
 
   const playerNameDisplay = document.getElementById("playerName");
@@ -40,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // 2. === ДОДАНО: Запускаємо музику ===
     backgroundMusic.play();
 
     startScreen.classList.add("disabled-screen");
@@ -115,7 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetGame(restartBtn) {
-    // 3. === ДОДАНО: Зупиняємо музику і перемотуємо на початок ===
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
 
