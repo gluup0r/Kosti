@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра в кості</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ти граєш — ми підтримуємо. Твої гроші, наші гроші!</h1>
+
+  <div class="container">
+
+    <div id="startScreen">
+      <p>Введіть ваше ім’я та ставку, щоб почати гру</p>
+      <input type="text" id="nameInput" placeholder="Ваше ім’я">
+      <input type="number" id="betInput" placeholder="Ставка" min="1">
+      <button id="startBtn">Почати гру</button>
+      <audio id="backgroundMusic" loop src="audio/evreyskayapodlayamyzuka.mp3"></audio>
+      <p id="error" class="error"></p>
+    </div>
+
+    <div id="game" class="inactive">
+      <p id="playerName"></p>
+      <p id="betInfo"></p>
+
+      <div class="scores">
+        <p id="playerScore">Ваші перемоги: 0</p>
+        <p id="computerScore">Перемоги комп’ютера: 0</p>
+      </div>
+
+      <div class="table">
+        <div class="dice-container">
+          <div class="dice" id="playerDice"></div>
+          <div class="dice" id="computerDice"></div>
+        </div>
+      </div>
+
+      <button id="rollBtn" disabled>Кинути кубик</button>
+      <p id="result"></p>
+    </div>
+
+  </div> <script src="script.js"></script>
+</body>
+</html>
