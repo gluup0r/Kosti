@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     backgroundMusic.play();
-    backgroundMusic.volume = 0.05;
+    backgroundMusic.volume = 0.005;
 
     startScreen.classList.add("disabled-screen");
     nameInput.disabled = true;
@@ -141,3 +141,4 @@ document.addEventListener("DOMContentLoaded", () => {
     restartBtn.remove();
   }
 });
+
