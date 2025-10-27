@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     backgroundMusic.play();
+    backgroundMusic.volume = 0.05;
 
     startScreen.classList.add("disabled-screen");
     nameInput.disabled = true;
